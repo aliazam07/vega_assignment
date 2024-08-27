@@ -1,0 +1,70 @@
+.add-caption-page {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #f5a623, #f8e71c);
+    min-height: 100vh;
+    padding: 20px;
+    gap: 20px;
+}
+
+.thumbnail {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.canvas-wrapper {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canvas-container {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.controls button {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.controls button:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.controls button:focus {
+    outline: none;
+}
+
+/* Specific style for download button */
+.controls button.download-button {
+    background: linear-gradient(45deg, #f44, #f77);
+}
+
+.controls button.download-button:hover {
+    background: linear-gradient(45deg, #f77, #f44);
+}
