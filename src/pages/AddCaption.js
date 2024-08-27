@@ -18,6 +18,7 @@ const AddCaption = () => {
       const img = new window.Image();
       img.crossOrigin = 'Anonymous'; // Set crossOrigin
       img.src = state.image.urls.regular;
+      
       img.onload = () => {
         setImage(img);
       };
@@ -192,10 +193,12 @@ const AddCaption = () => {
               {image && <Image image={image} width={800} height={600} />}
               {objects.map((obj, index) => {
                 const id = `object_${index}`;
+                const isSelected = id === selectedId;
                 switch (obj.type) {
                   case 'text':
                     return (
                       <Text
+                      className={isSelected}
                         key={id}
                         id={id}
                         text={obj.text}
