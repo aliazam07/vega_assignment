@@ -48,8 +48,8 @@ const SearchPage = () => {
   return (
     <div className="search-page">
       <header className="page-header">
-        <h1>Md Ali Azam</h1>
-        <p>Email: <a href="mailto:mdaliazam2002@gmail.com">mdaliazam2002@gmail.com</a></p>
+        <h1>Imran Ahmad</h1>
+        <p>Email: <a href="mailto:imranahmad9942880@gmail.com">imranahmad9942880@gmail.com</a></p>
       </header>
       <div className="search-container">
         <input
